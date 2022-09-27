@@ -67,7 +67,7 @@ export default function Home() {
           <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               navigation 
-              pagination  
+              pagination
               className="mySwiper"
               slidesPerView={1}      
               scrollbar={{ draggable: true }}
@@ -76,11 +76,46 @@ export default function Home() {
               
               
             >
-              <SwiperSlide> Europa <Img src='..\..\europe.png' w="100vw" /> </SwiperSlide>
-              <SwiperSlide> <Img src='..\..\asia.jpg' w="100vw" /> </SwiperSlide>
-              <SwiperSlide> <Img src='..\..\africa.jpg' w="100vw" /> </SwiperSlide>
-              <SwiperSlide> <Img src='..\..\oceania.jpg' w="100vw" /> </SwiperSlide>
-              <SwiperSlide> <Img src='..\..\america.jpg' w="100vw" /> </SwiperSlide>
+              <SwiperSlide> 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+                    <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> Europa </Text>
+                    <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> O continente mais antigo. </Text>
+                    <Img src='..\..\europe.png' w="100vw" />
+                  </Flex>
+              </SwiperSlide>
+
+              <SwiperSlide> 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+                    <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> Asia </Text>
+                    <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> Um novo mundo a explorar. </Text>
+                    <Img src='..\..\asia.jpg' w="100vw" />
+                  </Flex>
+              </SwiperSlide>
+
+              <SwiperSlide> 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+                    <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> Africa </Text>
+                    <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> Riqueza natural sem igual. </Text>
+                    <Img src='..\..\africa.jpg' w="100vw" />
+                  </Flex>
+              </SwiperSlide>
+              
+              <SwiperSlide> 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+                    <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> Oceania </Text>
+                    <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> Cangurus, praias, surf, e muito mais. </Text>
+                    <Img src='..\..\oceania.jpg' w="100vw" />
+                  </Flex>
+              </SwiperSlide>
+
+              <SwiperSlide> 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+                    <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> America </Text>
+                    <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> Diversidade, natureza e animação. </Text>
+                    <Img src='..\..\america.jpg' w="100vw" />
+                  </Flex>
+              </SwiperSlide>
+             
               
           </Swiper>
        </Box> 
