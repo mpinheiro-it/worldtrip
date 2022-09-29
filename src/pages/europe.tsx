@@ -1,4 +1,4 @@
-import {Flex, Box, Img, Text, Heading, Image, Badge, Avatar} from '@chakra-ui/react' 
+import {Flex, Box, Img, Text, Heading, Image, VStack, Avatar} from '@chakra-ui/react' 
 
 export default function europe() {
   const property = {
@@ -9,7 +9,6 @@ export default function europe() {
     countryLogo: 'https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png' 
   }
 
-
     return (
         
     <Flex w="100vw" justify={"center"} alignItems={"center"} flexDir="column"> 
@@ -17,11 +16,13 @@ export default function europe() {
         <Img src='..\..\logo.png' alt='Logo' m={4} w={100} />
       </Box> 
 
-      <Flex w="100vw" h="36" background={"url('../../europe_page.png')"} alignItems="center" justifyContent="center">
+      <Flex w="100vw" h={[200 , 350]} background={"url('../../europe_page.jpg')"} backgroundSize={"100%"} backgroundRepeat={"no-repeat"}  alignItems={["center", "left"]} justifyContent={["center", "left"]}>
           <Text           
             color="#F5F8FA" 
             fontSize={"3xl"}
-            fontWeight={"600"}
+            fontWeight={"600"} 
+            mt= {["auto", 250]} 
+            ml= {["auto", 35]}           
             >
               Europa
           </Text>        
@@ -55,27 +56,113 @@ export default function europe() {
 
       </Flex>
 
-      <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-        <Image src={property.imageUrl} alt={property.imageAlt} />
+      <VStack spacing={4}>
 
-        <Flex p='6' justifyContent={"space-between"}>     
+          <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+            <Image src={property.imageUrl} alt={property.imageAlt} />
 
-          <Box
-            mt='1'
-            fontWeight='semibold'
-            as='h4'
-            lineHeight='tight'                     
-          >
-            <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-            <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+            <Flex p='6' justifyContent={"space-between"}>     
+
+              <Box
+                mt='1'
+                fontWeight='semibold'
+                as='h4'
+                lineHeight='tight'                     
+              >
+                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
+                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+              </Box>
+
+              <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+            
+            </Flex>
           </Box>
 
-          <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
-        
-        </Flex>
-    </Box>
-  
+          <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+            <Image src={property.imageUrl} alt={property.imageAlt} />
 
+            <Flex p='6' justifyContent={"space-between"}>     
+
+              <Box
+                mt='1'
+                fontWeight='semibold'
+                as='h4'
+                lineHeight='tight'                     
+              >
+                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
+                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+              </Box>
+
+              <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+            
+            </Flex>
+          </Box>
+
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                <Image src={property.imageUrl} alt={property.imageAlt} />
+
+                <Flex p='6' justifyContent={"space-between"}>     
+          
+                  <Box
+                      mt='1'
+                      fontWeight='semibold'
+                      as='h4'
+                      lineHeight='tight'                     
+                    >
+                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
+                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                    </Box>
+
+                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+                  
+                  </Flex>
+                </Box>
+
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                  <Image src={property.imageUrl} alt={property.imageAlt} />
+
+                  <Flex p='6' justifyContent={"space-between"}>     
+
+                    <Box
+                      mt='1'
+                      fontWeight='semibold'
+                      as='h4'
+                      lineHeight='tight'                     
+                    >
+                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
+                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                    </Box>
+
+                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+                  
+                  </Flex>
+                </Box>
+
+                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                  <Image src={property.imageUrl} alt={property.imageAlt} />
+
+                  <Flex p='6' justifyContent={"space-between"}>     
+
+                    <Box
+                      mt='1'
+                      fontWeight='semibold'
+                      as='h4'
+                      lineHeight='tight'                     
+                    >
+                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
+                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                    </Box>
+
+                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+                  
+                  </Flex>
+                </Box>  
+
+          
+
+      </VStack>
+
+      
     
     </Flex>
     )
