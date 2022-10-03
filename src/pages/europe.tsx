@@ -1,14 +1,8 @@
 import {Flex, Box, Img, Text, Heading, Image, VStack, Avatar} from '@chakra-ui/react' 
+import { property } from './cities'
 
 export default function europe() {
-  const property = {
-    imageUrl: 'https://www.globalactivestudy.com/wp-content/uploads/2018/05/london-848x548.jpg',
-    imageAlt: 'London City in a rainy day - a red telephone cabine at front and the famous clock tower in the back',
-    title: 'Londres',
-    subtitle: 'Reino Unido',    
-    countryLogo: 'https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png' 
-  }
-
+  
     return (
         
     <Flex w="100vw" justify={"center"} alignItems={"center"} flexDir="column"> 
@@ -21,8 +15,8 @@ export default function europe() {
             color="#F5F8FA" 
             fontSize={"3xl"}
             fontWeight={"600"} 
-            mt= {["auto", 250]} 
-            ml= {["auto", 35]}           
+            mt= {[, 250]} 
+            ml= {[, 35]}                    
             >
               Europa
           </Text>        
@@ -58,8 +52,8 @@ export default function europe() {
 
       <VStack spacing={4}>
 
-          <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-            <Image src={property.imageUrl} alt={property.imageAlt} />
+          <Box className='London' maxW='80%' borderWidth='1px' borderRadius='lg' borderColor="#FFBA0880" overflow='hidden'>
+            <Image src={property.london.imageUrl} alt={property.london.imageAlt} />
 
             <Flex p='6' justifyContent={"space-between"}>     
 
@@ -69,17 +63,17 @@ export default function europe() {
                 as='h4'
                 lineHeight='tight'                     
               >
-                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.london.title} </Text>
+                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.london.subtitle} </Text>
               </Box>
 
-              <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+              <Avatar alignSelf={"center"} name={property.london.title} src={property.london.countryLogo}  />
             
             </Flex>
           </Box>
 
-          <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-            <Image src={property.imageUrl} alt={property.imageAlt} />
+          <Box className='Paris' maxW='80%' borderWidth='1px' borderRadius='lg' borderColor="#FFBA0880" overflow='hidden'>
+            <Image src={property.paris.imageUrl} alt={property.paris.imageAlt} />
 
             <Flex p='6' justifyContent={"space-between"}>     
 
@@ -89,37 +83,36 @@ export default function europe() {
                 as='h4'
                 lineHeight='tight'                     
               >
-                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.paris.title} </Text>
+                <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.paris.subtitle} </Text>
               </Box>
 
-              <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+              <Avatar alignSelf={"center"} name={property.paris.title} src={property.paris.countryLogo}  />
             
             </Flex>
           </Box>
 
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                <Image src={property.imageUrl} alt={property.imageAlt} />
+          <Box className='Munich' maxW='80%' borderWidth='1px' borderRadius='lg' borderColor="#FFBA0880" overflow='hidden'>
+                  <Image src={property.munich.imageUrl} alt={property.munich.imageAlt} />
 
-                <Flex p='6' justifyContent={"space-between"}>     
-          
-                  <Box
-                      mt='1'
-                      fontWeight='semibold'
-                      as='h4'
-                      lineHeight='tight'                     
-                    >
-                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
-                    </Box>
+                  <Flex p='6' justifyContent={"space-between"}>     
+            
+                    <Box
+                        mt='1'
+                        fontWeight='semibold'
+                        as='h4'
+                        lineHeight='tight'                     
+                      >
+                        <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.munich.title} </Text>
+                        <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.munich.subtitle} </Text>
+                      </Box>
 
-                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
-                  
-                  </Flex>
-                </Box>
+                      <Avatar alignSelf={"center"} name={property.munich.title} src={property.munich.countryLogo}  />
+                    </Flex>
+          </Box>
 
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                  <Image src={property.imageUrl} alt={property.imageAlt} />
+          <Box className='Rome' maxW='80%' borderWidth='1px' borderRadius='lg' borderColor="#FFBA0880" overflow='hidden'>
+                  <Image src={property.rome.imageUrl} alt={property.rome.imageAlt} />
 
                   <Flex p='6' justifyContent={"space-between"}>     
 
@@ -129,17 +122,16 @@ export default function europe() {
                       as='h4'
                       lineHeight='tight'                     
                     >
-                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.rome.title} </Text>
+                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.rome.subtitle} </Text>
                     </Box>
 
-                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
-                  
+                    <Avatar alignSelf={"center"} name={property.rome.title} src={property.rome.countryLogo} /> 
                   </Flex>
-                </Box>
+          </Box>
 
-                <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                  <Image src={property.imageUrl} alt={property.imageAlt} />
+          <Box className='Porto' maxW='80%' borderWidth='1px' borderRadius='lg' borderColor="#FFBA0880" overflow='hidden'>
+                  <Image src={property.porto.imageUrl} alt={property.porto.imageAlt} />
 
                   <Flex p='6' justifyContent={"space-between"}>     
 
@@ -149,20 +141,16 @@ export default function europe() {
                       as='h4'
                       lineHeight='tight'                     
                     >
-                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.title} </Text>
-                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.subtitle} </Text>
+                      <Text color="#47585B" fontSize={"2xl"} fontWeight="600" mb={4} > {property.porto.title} </Text>
+                      <Text color="#999999" fontSize={"2xl"} fontWeight="500" > {property.porto.subtitle} </Text>
                     </Box>
 
-                    <Avatar alignSelf={"center"} name={property.title} src="https://w7.pngwing.com/pngs/837/247/png-transparent-flag-of-the-united-kingdom-flag-of-the-united-states-sms-higher-education-group-united-states-flag-london-united-states.png"  />
+                    <Avatar alignSelf={"center"} name={property.porto.title} src={property.porto.countryLogo}  />
                   
                   </Flex>
-                </Box>  
-
-          
+          </Box>            
 
       </VStack>
-
-      
     
     </Flex>
     )

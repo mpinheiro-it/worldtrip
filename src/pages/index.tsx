@@ -76,8 +76,8 @@ export default function Home() {
               
               
             >
-              <SwiperSlide> 
-                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"}>
+              <SwiperSlide > 
+                  <Flex alignItems={"center"} justifyContent={"center"} flexDir={"column"} className="swiper-button-white">
                     <Text color="white" position="absolute" top="125px" fontWeight={"700"} fontSize={"2xl"}> Europa </Text>
                     <Text color="white" position="absolute" top="175px" fontWeight={"700"} fontSize={"lg"}> O continente mais antigo. </Text>
                     <Img src='..\..\europe.png' w="100vw" />
