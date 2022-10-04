@@ -7,16 +7,16 @@ export default function europe() {
         
     <Flex w="100vw" justify={"center"} alignItems={"center"} flexDir="column"> 
       <Box>
-        <Img src='..\..\logo.png' alt='Logo' m={4} w={100} />
+        <Img src='..\..\logo.png' alt='Logo' m={4} w={[100, , , 160]} />
       </Box> 
 
-      <Flex w="100vw" h={[200 , 350]} background={"url('../../europe_page.jpg')"} backgroundSize={"100%"} backgroundRepeat={"no-repeat"}  alignItems={["center", "left"]} justifyContent={["center", "left"]}>
+      <Flex w={"100vw"} minHeight={["150px", "200px", "300px", "500px"]} background={"url('../../europe_page.png')"} backgroundSize={"100%"} backgroundRepeat={"no-repeat"}  alignItems={["center",,, "left"]} justifyContent={["center",,, "left"]}>
           <Text           
             color="#F5F8FA" 
-            fontSize={"3xl"}
+            fontSize={["3xl", "5xl"]}
             fontWeight={"600"} 
-            mt= {[, 250]} 
-            ml= {[, 35]}                    
+            mt= {[,,, 120, 320]} 
+            ml= {[,,, 20, 32]}                    
             >
               Europa
           </Text>        
